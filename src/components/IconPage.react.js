@@ -1,4 +1,4 @@
-// @flow
+//      
 
 import * as React from "react";
 
@@ -10,14 +10,7 @@ import flagIcons from "../data/icons/flag";
 import paymentIcons from "../data/icons/payment";
 import SiteWrapper from "../SiteWrapper.react";
 
-const iconSets: Array<{
-  prefix: "fa" | "fe" | "flag" | "payment",
-  title: string,
-  icons: Array<string>,
-  description?: string,
-  link?: string,
-}> = [
-  {
+const iconSets = [{
     prefix: "fe",
     title: "Feather Icons",
     icons: feIcons,
@@ -35,7 +28,7 @@ const iconSets: Array<{
   { prefix: "payment", title: "Payments", icons: paymentIcons },
 ];
 
-function IconPage(): React.Node {
+function IconPage()             {
   return (
     <SiteWrapper>
       <Page.Content title="Icons">
